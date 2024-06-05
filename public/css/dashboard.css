@@ -1,0 +1,278 @@
+@import url('https://fonts.cdnfonts.com/css/super-brigade');
+
+:root {
+    --var-background: #1d2635;
+    --var-sec-background: #01081a;
+
+    --var-red: #ff6f6f;
+    --var-pink: #eb2aec;
+    --var-green: #19f4ba;
+    --var-grey: #474e60;
+    --var-gold: #ebcf33;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    font-family: Arial;
+}
+
+body {
+    background: var(--var-background);
+}
+
+.notif {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: #283860bd;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    border-left: solid #5de97e 5px;
+}
+
+.main-container {
+    display: block;
+    margin: 15px;
+}
+
+.main-container .nav-bar {
+    background: var(--var-sec-background);
+    border-radius: 5px;
+}
+
+.main-container .nav-bar ul {
+    display: flex;
+    margin: 10px;
+    padding: 15px;
+}
+
+.main-container .nav-bar ul li a {
+    margin: 0px 8px;
+    font-weight: 600;
+
+}
+
+.main-container .nav-bar ul li a ion-icon {
+    vertical-align: sub;
+    margin-right: 3px;
+    color: var(--var-grey);
+}
+
+.main-container .nav-bar ul li a:hover ion-icon {
+    color: white;
+    transition: 0.5s;
+    transform: rotateZ(360deg);
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.logo a {
+    font-family: 'Super Brigade', sans-serif;
+}
+
+/* server status */
+
+
+.main-container .server-bar {
+    background: var(--var-sec-background);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.main-container .server-bar .bar-left {
+    width: 80%;
+
+}
+
+.main-container .server-bar .bar-left .bar {
+    display: flex;
+    align-items: center;
+}
+
+.main-container .server-bar .bar-left .bar h1 {
+    margin: 0;
+}
+
+.main-container .server-bar .bar-left .bar img {
+    width: 50px;
+    margin: 10px;
+}
+
+
+.main-container .server-bar .bar-right {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* serveur bar info  */
+
+.main-container .server-bar-info {
+    margin: 10px 0px;
+}
+
+.main-container .server-bar-info ul {
+    display: flex;
+    justify-content: center;
+}
+.main-container .server-bar-info ul li {
+    margin-right: 25px;
+    background: var(--var-sec-background);
+    border-radius: 5px;
+    padding: 15px;
+    border-bottom: var(--var-pink) solid 4px;
+
+}
+.main-container .server-bar-info ul li .badge {
+    background-color: var(--var-pink);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+.main-container .server-bar-info ul li .badge ion-icon{
+    vertical-align: sub;
+    margin: 0px 5px;
+}
+
+/* sub container */
+
+.main-container .sub-main-container {
+    display: flex;
+}
+
+/* console */
+
+.main-container .sub-main-container .console-container {
+    background: var(--var-sec-background);
+    width: 80%;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+
+.main-container .sub-main-container .console-container ion-icon {
+    vertical-align: sub;
+}
+
+.main-container .sub-main-container .console-container h2 {
+    margin: 10px 20px;
+}
+
+.main-container .sub-main-container .console-container .console {
+    height: 400px;
+    padding: 10px;
+    background-color: #141924;
+    border: var(--var-grey) 1.5px solid;
+    color: rgb(65, 65, 65);
+    overflow-y: scroll;
+    margin: 5px 20px 0px;
+    text-align: left;
+    overflow-x: hidden;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.main-container .sub-main-container .console-container .console-input {
+    position: relative;
+    margin: 0px 20px;
+    top: -5px;
+    overflow: hidden;
+    border: var(--var-grey) 1.5px solid;
+    margin-bottom: 15px;
+}
+
+.main-container .sub-main-container .console-container input[type="text"] {
+    background: #1d2635;
+    border: 0;
+    width: 100%;
+}
+
+.main-container .sub-main-container .console-container input[type="text"]:focus {
+    outline: 0;
+    border: 0;
+}
+
+/* joueurs */
+.main-container .sub-main-container .players-container {
+    width: 20%;
+    background: var(--var-sec-background);
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.main-container .sub-main-container .players-container ion-icon {
+    vertical-align: sub;
+}
+
+.main-container .sub-main-container .players-container h2 {
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.main-container .sub-main-container .players-container ul li {
+    text-align: center;
+    color: #ffffff94;
+    background: var(--var-background);
+    margin: 8px 25px;
+    padding: 5px;
+    border-radius: 3px;
+    border-left: solid var(--var-pink) 4px;
+}
+/* premium pub */
+
+.main-container .premium {
+    background: url("../../asset/img/premium.gif");
+    background-size: cover;
+    margin: 10px 0px;
+    border-radius: 5px;
+    height: 70px;
+    border: var(--var-gold) solid 2px;
+    overflow: hidden;
+    display: flex; 
+    align-items: center; 
+}
+
+.main-container .premium h2 {
+    margin: 0 auto;
+}
+
+.main-container .premium h2 span {
+    background: var(--var-gold);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* componentes */
+
+.bg-pink {
+    background: var(--var-pink);
+    color: var(--var-sec-background);
+}
+.bg-green {
+    background: var(--var-green);
+    color: var(--var-sec-background);
+}
+.bg-red {
+    background: var(--var-red);
+    color: var(--var-sec-background);
+}
+
+.button {
+    text-align: center;
+    margin: 8px;
+    padding: 10px 30px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+button {
+    border: none;
+}

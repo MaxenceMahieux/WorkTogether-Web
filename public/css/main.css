@@ -1,0 +1,280 @@
+@import url('https://fonts.cdnfonts.com/css/geneva01');
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Geneva01', sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background: #1B1E2D;
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    margin: 5vh;
+    background: #1F2234;
+    height: 90vh;
+}
+
+
+/* navbar */
+
+.main-container .nav-bar {
+    background: #1F2234;
+    width: 20%;
+}
+
+.main-container .nav-bar img {
+    padding: 15px;
+    width: 10vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.main-container .nav-bar ul {
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.main-container .nav-bar ul li {
+    height: 5vh;
+    padding-top: 2vh;
+    color: #70769E;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.main-container .nav-bar ul li ion-icon {
+    vertical-align: middle;
+}
+
+.main-container .nav-bar ul li:hover {
+    display: block;
+    background: #374FC3;
+    color: #ffffff;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.main-container .nav-bar .info-serv {
+    bottom: 0;
+    background-color: #1B1D2D;
+    color: white;
+    text-align: center;
+    padding: 0.7vh;
+}
+
+
+.main-container .sub-container {
+    background: #272A41;
+    width: 80%;
+    text-align: center;
+}
+
+
+
+/* sub-container */
+
+
+.sub-container h1 {
+    color: #374FC3;
+    text-align: center;
+    margin: 15px;
+}
+
+.sub-container h2 {
+    color: #97BDC6;
+    margin: 15px;
+    margin-left: 45px;
+}
+
+.sub-container .sub {
+    margin: 5px;
+    margin-left: 50px;
+    display: inline-grid;
+
+}
+
+.main-button button {
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.main-button button ion-icon {
+    vertical-align: middle;
+}
+
+.player-list {
+    width: 30%;
+    margin: 0 auto;
+
+}
+
+.player-list img {
+    height: 45px;
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.info {
+    width: 30vh;
+    background: #1b1e2d;
+    border-radius: 5px;
+    border-left: 6px solid #374FC3;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: white;
+    padding: 2vh;
+    font-size: 3vh;
+
+}
+
+.info-container .info ion-icon {
+    vertical-align: middle;
+}
+
+.players-list-container {
+    width: 75%;
+    background: #1F2234;
+    border-radius: 7px;
+    margin: 0 auto;
+}
+
+.players-list-container .player-list {
+    padding: 5px;
+}
+
+.sub button {
+    border: none;
+    border-radius: 5px;
+    background: #26be72;
+    padding: 5px;
+    color: white;
+}
+
+/* console */
+
+.console {
+    width: 815px;
+    height: 300px;
+    padding: 10px;
+    background-color: #283860;
+    color: white;
+    overflow-y: scroll;
+    margin: 0 auto;
+    text-align: left;
+    overflow-x: hidden;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.console::-webkit-scrollbar {
+    width: 10px;
+}
+
+.console::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.console::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+.console * {
+    text-align: left;
+    font-family: Arial Black, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.console-button {
+    border: 0;
+    padding: 4px;
+    vertical-align: top;
+    left: -4px;
+    position: relative;
+    background: #5de97e;
+    border-bottom-right-radius: 5px;
+    color: white;
+    padding-left: 10px;
+}
+
+/* componentes */
+
+.notif {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #283860bd;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    border-left: solid #5de97e 5px;
+}
+
+select {
+    padding: 5px 15px;
+    font-size: 18px;
+    background: #1F2234;
+    border: none;
+    color: #70769E;
+    border-radius: 5px;
+}
+
+select option {
+    border: none;
+}
+
+label {
+    color: #70769E;
+    margin: 5px;
+    font-size: 19px;
+}
+
+input[type="text"] {
+    background-color: #1F2234;
+    border: none;
+    padding-top: 5px;
+    border-radius: 5px;
+    height: 20px;
+    width: 250px;
+    color: white;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #70769E;
+    border: 2px solid #555;
+    border-radius: 4px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #4CAF50;
+}
+
+a {
+    text-decoration: none;
+}
+
+
