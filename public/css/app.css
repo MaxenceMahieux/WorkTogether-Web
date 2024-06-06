@@ -1,0 +1,179 @@
+/* Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/super-brigade');
+
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--var-black);
+}
+
+:root {
+  --var-black: #000000;
+  --var-light-grey: #f8f9fd;
+  --var-grey: #3a3a3a;
+  --var-dark-grey: #1f1f1f;
+  --var-white: #ffffff;
+}
+
+/* Code */
+
+.navbar {
+  background-color: var(--var-light-grey);
+  border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+  padding: 25px 100px;
+
+  & nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+
+    ul:nth-child(1) {
+      & a {
+        font-weight: 600;
+        font-size: 24px;
+        font-family: 'Super Brigade', sans-serif;
+      }
+    }
+
+    & ul:nth-child(2) {
+      display: flex;
+      gap: 30px;
+
+      
+      & li {
+        transition-duration: 0.3s;
+
+        &:hover {
+          transition-duration: 0.3s;
+          transform: translateY(-0.5rem);
+        }
+      }
+    }
+
+    & ul:nth-child(3) {
+
+      & a {
+        padding: 12px 24px;
+        background-color: var(--var-dark-grey);
+        border-radius: 4px;
+        color: var(--var-white);
+        transition-duration: 0.3s;
+
+        &:hover {
+          transition-duration: 0.3s;
+          background-color: var(--var-grey);
+        }
+      } 
+    }
+  }
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+
+  & h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  & p {
+    font-weight: 400;
+    opacity: 0.75;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  & div {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+
+    & a:first-child {
+      padding: 10px 20px;
+      background-color: var(--var-dark-grey);
+      border-radius: 4px;
+      color: var(--var-white);
+      transition-duration: 0.3s;
+
+      &:hover {
+        transition-duration: 0.3s;
+        background-color: var(--var-grey);
+      }
+    }
+    
+    & a:nth-child(2) {
+      padding: 10px 20px;
+      border: var(--var-dark-grey) 2px solid;
+      border-radius: 4px;
+      color: var(--var-dark-grey);
+      transition-duration: 0.3s;
+
+      &:hover {
+        transition-duration: 0.3s;
+        background-color: var(--var-light-grey);
+      }
+    }
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+
+  & h2 {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px 0;
+    border-bottom: 1px var(--var-grey) solid;
+    margin: 0 auto;
+  }
+
+  & div {
+    display: flex;
+    flex-direction: column;
+
+    & div {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      justify-content: center;
+      padding: 20px 20px;
+      border-radius: 8px;
+
+      & img {
+        width: 50px;
+        margin: auto 0;
+      }
+
+      & p {
+        padding: 14px 20px;
+        background-color: var(--var-light-grey);
+        color: var(--var-grey);
+      }
+
+      & a {
+        padding: 14px 20px;
+        border: var(--var-dark-grey) 2px solid;
+        color: var(--var-dark-grey);
+        border-radius: 4px;
+        font-weight: 600;
+      }
+    }
+  }
+}
